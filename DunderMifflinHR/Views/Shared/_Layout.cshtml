@@ -3,26 +3,33 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Dunder Mifflin HR Website</title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="~/Content/Styles.css" rel="stylesheet" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                </ul>
-            </div>
+    <div class="w3-top">
+
+        <div class="w3-bar w3-blue w3-large" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+
+            <a class="w3-button w3-bar-item w3-hover-none" href="@Url.Action("Index", "Home")">
+                <img src="~/Content/Images/BlackCircleCropped.png" width="40" />
+            </a>
+
+            <a class="w3-button w3-bar-item w3-hover-none" style="margin-top: 8px" href="@Url.Action("Index", "Home")">Dunder Mifflin HR</a>
+
+            <a class="w3-button w3-bar-item w3-hover-none" style="margin-top: 8px" href="@Url.Action("Index","Region")"><i class="glyphicon glyphicon-globe"></i> Region</a>
+
+            <a class="w3-button w3-bar-item w3-hover-none" style="margin-top: 8px" href="@Url.Action("Index", "About")"><i class="glyphicon glyphicon-book"></i> About</a>
+
+            <a class="w3-button w3-bar-item w3-hover-none" style="margin-top: 8px" href="@Url.Action("Index", "Contact")"><i class="glyphicon glyphicon-envelope"></i> Contact</a>
+
+            <a class="w3-button w3-padding-small w3-bar-item w3-hover-none w3-right w3-round-large w3-black w3-hover-black" style="margin-right: 15px; margin-top: 9px; color: white" href="#">Sign-up</a>
+
+            <a class="w3-button w3-padding-small w3-bar-item w3-hover-none w3-right w3-round-large w3-border w3-border-black w3-hover-black" style="margin-right: 15px; margin-top: 8px; color: white" href="#">Login</a>
         </div>
     </div>
 
@@ -30,7 +37,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Dunder Mifflin HR Website</p>
         </footer>
     </div>
 
