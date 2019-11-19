@@ -11,7 +11,7 @@ namespace DunderMifflinHR.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            //steve smells like cheese. But in a good way.
+            //steve smells like cheese. a lot. But in a good way.
             return View();
         }
     }
